@@ -34,11 +34,14 @@ class Vampire
         @thirsty = thirsty
     end
 
-    def drink_change
+    def drink_change(drink_change)
         @thirsty = false
     end
+end
 
 vampire1 = Vampire.new("Count Chocula")
+p vampire1
+vampire1 = drink_change(false)
 p vampire1
 
 #  Write a Dragon class
@@ -56,4 +59,4 @@ p vampire1
 #  it should have a celebrate_birthday method. When called, the age increases by 1
 #  it should have an is_adult attribute (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 #  it should have an is_old attribute that defaults to false. once a Hobbit is 101, it is old.
-#  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
+#  it should have a has_ring attribute. If the Hobbit's name is Frodo, true, if not, false.
