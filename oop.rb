@@ -93,4 +93,10 @@ class Hobbit
 
     def celebrate_birthday
         @celebrate_birthday += 1 
+        is_adult = age >= 33
+        @is_old = age >= 101
     end
+end
+
+hobbit1 = Hobbit.new("Frodo", "Weak")
+p hobbit1
