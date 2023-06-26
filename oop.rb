@@ -33,7 +33,13 @@ class Vampire
         @pet = pet
         @thirsty = thirsty
     end
-    
+
+    def drink_change
+        @thirsty = false
+    end
+
+vampire1 = Vampire.new("Count Chocula")
+p vampire1
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
