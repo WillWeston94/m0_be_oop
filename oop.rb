@@ -92,7 +92,7 @@ class Hobbit
     end
 
     def celebrate_birthday
-        @celebrate_birthday += 1 
+        @age+= 1                # must be @age not @celebrate like i previosuly wrote
         is_adult = age >= 33
         @is_old = age >= 101
     end
@@ -100,3 +100,12 @@ end
 
 hobbit1 = Hobbit.new("Frodo", "Weak")
 p hobbit1
+
+hobbit2 = Hobbit.new("Sam", "Actual Hero", 38 )
+p hobbit2 
+
+hobbit3 = Hobbit.new("Bilbo", "Greedy", 110)
+p hobbit3
+
+hobbit3.celebrate_birthday
+p hobbit3                   
