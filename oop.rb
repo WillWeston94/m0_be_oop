@@ -25,7 +25,15 @@ p unicorn1                 # unicorn1 in terminal
 #  it should have a thirsty attribute, that is true by default
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
+class Vampire
+    attr_reader :name, :pet, :thirsty
 
+    def initialize(name, pet ="bat", thirsty = true)
+        @name = name
+        @pet = pet
+        @thirsty = thirsty
+    end
+    
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
