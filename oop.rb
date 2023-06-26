@@ -80,15 +80,17 @@ p dragon1
 #  it should have a has_ring attribute. If the Hobbit's name is Frodo, true, if not, false.
 
 class Hobbit
-    attr_reader :name, :disposition, :age
+    attr_reader :name, :disposition, :age, :is_adult, :is_old, :has_ring
 
     def initialize(name, disposition, age = 0)
         @name = name
         @disposition = disposition
         @age = age
+        @is_adult = age >= 33
+        @is_old = age >= 101
+        @has_ring = name == "Frodo"
     end
 
     def celebrate_birthday
         @celebrate_birthday += 1 
     end
-    
