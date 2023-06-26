@@ -39,10 +39,9 @@ class Vampire
     end
 end
 
-vampire1 = Vampire.new("Count Chocula")
+vampire1 = Vampire.new("Count Chocula","bat", false )
 p vampire1
-vampire1 = drink_change(false)
-p vampire1
+
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
